@@ -1,0 +1,15 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond $1 !^(index\.php|images|css|js|robots|.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1 [L]
+
+</IfModule>
+
+AddType text/html .shtml .shtml .shtml .shtml html .html htm shtml
+AddType application/javascript js .js
+AddType text/css css .css
+
+
