@@ -36,6 +36,8 @@
  * @filesource
  */
 
+chdir(dirname(__DIR__));
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
